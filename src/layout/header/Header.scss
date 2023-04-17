@@ -1,10 +1,29 @@
 header {
+  padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
     a {
       color: white;
+      text-decoration: none;
+      transition: 0.4s;
+      &:hover {
+        color: #f31e2e;
+      }
+    }
+    .search {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      input {
+        display: none;
+      }
     }
   }
 }
