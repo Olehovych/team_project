@@ -1,9 +1,11 @@
 header {
+  margin: 0 auto;
+  max-width: 1920px;
   padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-
+  z-index: 2;
   nav {
     display: flex;
     align-items: center;
@@ -21,9 +23,12 @@ header {
       display: flex;
       align-items: center;
       gap: 5px;
-      input {
-        display: none;
-      }
+    }
+  }
+  .modal-overlay {
+    .modal {
+      display: flex;
+      gap: 5px;
     }
   }
 }

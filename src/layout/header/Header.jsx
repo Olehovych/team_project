@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
+
 //Styles//
 import Styles from "./Header.scss";
 //Img//
+import bag from "./img/Shopping_bag.svg";
 import account from "./img/Person.svg";
 import searchIco from "./img/Vector.svg";
 import logo from "./img/logo.png";
 ///
 export default function Header() {
-  function search() {
-    const InputSearch = document.querySelector("input").values;
-    console.log("Search");
-    InputSearch.style.display = "block";
-  }
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <header>
       <div className="logo">
@@ -23,12 +23,24 @@ export default function Header() {
         <Link to="/about">About us</Link>
         <Link to="/gallery">Gallery</Link>
         <Link to="/contact">Contact us</Link>
-        <div className="search">
-          <input type="search" />
-          <img src={searchIco} alt="search" onClick={search} />
+        {/* Modal Window */}
+        {isModalOpen && (
+          <div className="modal-overlay">
+            <div className="modal">
+              <input type="search" />
+              <button onClick={() => setIsModalOpen(false)}>Закрити</button>
+            </div>
+          </div>
+        )}
+        {/* /Modal Window */}
+        <div className="search" onClick={() => setIsModalOpen(true)}>
+          <img src={searchIco} alt="search" />
         </div>
         <Link to="/signUp">
           <img src={account} alt="account" />
+        </Link>
+        <Link to="/bag">
+          <img src={bag} alt="bag" />
         </Link>
       </nav>
     </header>
