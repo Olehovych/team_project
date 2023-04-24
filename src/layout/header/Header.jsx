@@ -10,6 +10,10 @@ import account from "./img/Person.svg";
 import searchIco from "./img/Vector.svg";
 import logo from "./img/logo.png";
 ///
+// Components
+import Search from "../../components/Search";
+
+//
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -33,9 +37,7 @@ export default function Header() {
           </div>
         )}
         {/* /Modal Window */}
-        <div className="search" onClick={() => setIsModalOpen(true)}>
-          <img src={searchIco} alt="search" />
-        </div>
+        <Search></Search>
         <Link to="/login">
           <img src={account} alt="account" />
         </Link>

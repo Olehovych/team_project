@@ -1,20 +1,22 @@
 footer {
   display: flex;
-  align-items: center;
   justify-content: end;
+  padding: 50px;
+
   nav {
     display: flex;
-    flex-direction: row;
-    li {
+    ul {
       display: flex;
-
-      a {
-        display: flex;
-        color: white;
-        text-decoration: none;
-        transition: 0.3s;
-        &:hover {
-          color: #f31e2e;
+      gap: 20px;
+      list-style-type: none;
+      li {
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          transition: 0.4s;
+          &:hover {
+            color: #f31e2e;
+          }
         }
       }
     }
