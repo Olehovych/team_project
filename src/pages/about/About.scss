@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  .left__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: #f0f8ff;
+      padding-bottom: 20px;
+    }
+    p {
+      color: #666666;
+      line-height: 2rem;
+    }
+  }
+  .right__block {
+    img {
+      object-fit: cover;
+      max-width: 70%;
+      border: 3.5px solid #000000;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}

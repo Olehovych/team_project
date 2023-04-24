@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header>
       <div className="logo">
-        <Link to="/">Logo{/* <img src={logo} alt="logo" /> */}</Link>
+        <Link to="/">MVMT</Link>
       </div>
       <nav>
         <Link to="/">Home</Link>
@@ -36,7 +36,7 @@ export default function Header() {
         <div className="search" onClick={() => setIsModalOpen(true)}>
           <img src={searchIco} alt="search" />
         </div>
-        <Link to="/signUp">
+        <Link to="/login">
           <img src={account} alt="account" />
         </Link>
         <Link to="/bag">

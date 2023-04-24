@@ -4,13 +4,28 @@ main {
     justify-content: center;
     align-items: center;
     .left__block {
-      img {
-        margin-top: 50px;
-        width: 75%;
-      }
+      position: relative;
+      width: 70%;
+      height: 100%;
     }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .imgClock {
+      position: relative;
+      z-index: 1;
+      width: 60%;
+    }
+
     .right__block {
-      max-width: 30%;
+      max-width: 450px;
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -26,6 +41,7 @@ main {
       }
       p {
         font-size: 16px;
+        color: #666666;
       }
       .button__block {
         display: flex;
