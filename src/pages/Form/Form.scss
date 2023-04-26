@@ -1,25 +1,41 @@
+/*
+header{
+  background-color: #ffffff;
+  
+  .logo{
+    a{
+
+      color: #000000;
+    }
+  }
+  nav{
+    a{
+      color: #000000;
+    }
+  }
+}*/
 #App {
+  height: calc(100vh - 130px);
+  background-color: #222222;
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: space-between;
 }
 #left {
-  margin-left: 100px;
-  width: 500px;
-  height: 80vh;
-  min-height: 600px;
+  margin-left: 10%;
+  height: 90%;
+  width: 35%;
   background-image: url(./img/photoLeft.png);
-  background-size: cover;
+  background-size: 100% 100%;
+  border: 2px black solid;
   filter: drop-shadow(7px 0px 20px rgba(0, 0, 0, 0.15));
 }
 #right {
   padding-left: 8%;
   width: 50%;
-  height: 100vh;
+  height: 100%h;
   input {
-    font-size: 20px;
-    border-radius: 3px;
+    font-size: 18px;
   }
 }
 .title {
@@ -30,7 +46,7 @@
   font-size: 32px;
   line-height: 48px;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: white;
 }
 .subTitle {
   font-family: "Poppins";
@@ -48,7 +64,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: white;
   margin-top: 25px;
   margin-bottom: 6px;
 }
@@ -59,6 +75,7 @@
   border-right: 0;
   border-bottom: 1px gray solid;
   width: 340px;
+  background-color: #222222;
 }
 .logInput:first-child {
   margin-top: 58px;
@@ -90,8 +107,34 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: white;
   margin-top: 25px;
   align-items: center;
   justify-content: center;
+  background-color: #000000;
 }
+button {
+  cursor: pointer;
+}
+
+// <div id="App">
+//         <div id="left"></div>
+//         <div id="right">
+//           <p class="title">Create an account</p>
+//           <p class="subTitle">Let’s get started with your 30 days free trial</p>
+//           <div id="loginForm">
+//             <form action="">
+//               <p className="logInput">Name</p>
+//               <input type="text" className="loginForm" />
+//               <p className="logInput">Email</p>
+//               <input type="text" className="loginForm" />
+//               <p className="logInput">Password</p>
+//               <input type="text" className="loginForm" /> <br />
+//               <button id="createAccount">Create Account</button> <br />
+//               <button id="createAccountGoogle">
+//                 {/* <img src={googleLogo}></img>Sign up with Google */}
+//               </button>
+//             </form>
+//           </div>
+//         </div>
+//       </div>

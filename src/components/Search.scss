@@ -1,0 +1,15 @@
+.search {
+  display: flex;
+  gap: 100px;
+  input {
+    outline: none;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px gray solid;
+    width: 150px;
+    height: 25px;
+    background-color: #222222;
+    color: #ffffff;
+  }
+}

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import Login from "../pages/login/Login";
-import About from "../pages/about/About";
-
+import styles from "./Search.scss";
 const watches = [
   { id: 1, name: "Rolex" },
   { id: 2, name: "Omega" },
@@ -20,23 +18,26 @@ const Search = () => {
 
   return (
     <>
-      <input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <ul
-        style={{
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        {filteredWatches.map((watch) => (
-          <Link to={About} key={watch.id}>
-            {watch.name}
-          </Link>
-        ))}
-      </ul>
+      <div className="search">
+        <input
+          placeholder="Search"
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <ul
+          style={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          {filteredWatches.map((watch) => (
+            <Link to="/about" key={watch.id}>
+              {watch.name}
+            </Link>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };

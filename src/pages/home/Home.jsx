@@ -52,8 +52,8 @@ export default function Home() {
   return (
     <main>
       <div className="main__block">
+        <img className="background" src={ImgBg[currentBg]} alt="Bg" />
         <div className="left__block">
-          <img className="background" src={ImgBg[currentBg]} alt="Bg" />
           <img src={imgClock[currentImage]} alt="Clock" />
         </div>
 

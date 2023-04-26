@@ -10,7 +10,7 @@ import About from "./pages/about/About";
 import Gallery from "./pages/gallery/Gallery";
 import Contact from "./pages/contact/Contact";
 import Bag from "./pages/bag/Bag";
-import Login from "./pages/login/Login";
+import { Form } from "./pages/Form/Form";
 function App() {
   return (
     <BrowserRouter>
@@ -20,9 +20,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/bag" element={<Bag />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Form />} />
       </Routes>
       <Footer />
     </BrowserRouter>
