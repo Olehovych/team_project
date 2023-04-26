@@ -1,0 +1,53 @@
+table {
+  color: white;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+table th,
+table td {
+  padding: 8px;
+  height: 120px;
+  border-right: 3px solid white;
+}
+table th {
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+.photoBag {
+  height: 120px;
+  width: 120x;
+}
+table th:last-child,
+table td:last-child {
+  border-right: 0;
+}
+.minus1,
+.plus1 {
+  width: 20px;
+  height: 20px;
+}
+.minus1,
+.plus1 {
+  background-color: inherit;
+  border: 0;
+  font-size: 25px;
+  color: white;
+}
+.buy {
+  margin-top: 50px;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: 0;
+  color: black;
+  font-size: 20px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

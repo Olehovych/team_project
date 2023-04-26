@@ -35,7 +35,8 @@ header{
   width: 50%;
   height: 100%h;
   input {
-    font-size: 18px;
+    font-size: 20px;
+    color: gray;
   }
 }
 .title {
@@ -61,7 +62,7 @@ header{
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: white;
@@ -116,25 +117,3 @@ header{
 button {
   cursor: pointer;
 }
-
-// <div id="App">
-//         <div id="left"></div>
-//         <div id="right">
-//           <p class="title">Create an account</p>
-//           <p class="subTitle">Let’s get started with your 30 days free trial</p>
-//           <div id="loginForm">
-//             <form action="">
-//               <p className="logInput">Name</p>
-//               <input type="text" className="loginForm" />
-//               <p className="logInput">Email</p>
-//               <input type="text" className="loginForm" />
-//               <p className="logInput">Password</p>
-//               <input type="text" className="loginForm" /> <br />
-//               <button id="createAccount">Create Account</button> <br />
-//               <button id="createAccountGoogle">
-//                 {/* <img src={googleLogo}></img>Sign up with Google */}
-//               </button>
-//             </form>
-//           </div>
-//         </div>
-//       </div>
