@@ -1,53 +1,93 @@
 table {
-  color: white;
-  border-collapse: collapse;
-  width: 80%;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-  font-size: 22px;
-  text-align: center;
-}
-table th,
-table td {
-  padding: 8px;
-  height: 120px;
-  border-right: 3px solid white;
-}
-table th {
-  border-bottom: 1px solid white;
-  font-weight: bold;
-}
-.photoBag {
-  height: 120px;
-  width: 120x;
-}
-table th:last-child,
-table td:last-child {
-  border-right: 0;
-}
-.minus1,
-.plus1 {
-  width: 20px;
-  height: 20px;
-}
-.minus1,
-.plus1 {
-  background-color: inherit;
-  border: 0;
-  font-size: 25px;
-  color: white;
-}
-.buy {
-  margin-top: 50px;
-  height: 40px;
-  width: 200px;
-  border-radius: 20px;
-  border: 0;
-  color: black;
-  font-size: 20px;
-}
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    color: white;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+  }
+  table th, table td {
+    padding: 8px;
+    height: 120px;
+    border-right: 3px solid white;
+  }
+  table th {
+    border-bottom: 1px solid white;
+    font-weight: bold;
+  }
+  .photoBag{
+    height: 120px;
+    width: 120x;
+  }
+  table th:last-child, table td:last-child{
+    border-right: 0;
+  }
+  .minus1, .plus1{
+    width: 20px;
+    height: 20px;
+  }
+  .minus1, .plus1 {
+    background-color: inherit;
+    border: 0;
+    font-size: 25px;
+    color: white;
+  }
+  .buy{
+    margin-top: 50px;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: 0;
+    color: black;
+    font-size: 20px;
+  }
+   .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   #buyPage{
+    display: none;
+    border-radius: 20px;
+    width: 960px;
+    height: 750px;
+    border: 1px solid white;
+    position: fixed;
+    background-color: white;
+    transform: translateY(-40px);
+    flex-direction: column;
+    align-items: center;
+   }
+   #buyPage h1{
+    margin-top: 100px;
+    color: #222222;
+   }
+   .formBuy{
+    display: flex;
+    flex-direction: row;
+   }
+   #rightFormBuy{
+    margin-left: 20px;
+   }
+   #leftFormBuy, #rightFormBuy{
+    display: flex;
+    flex-direction: column;
+   }
+   #leftFormBuy input, #rightFormBuy input, #leftFormBuy select, select option{
+    background: inherit;
+    border-radius: 10px;
+    height: 50px;
+    width: 380px;
+    margin-top: 40px;
+    color: #222222;
+    font-size: 18px;
+    padding-left: 10px;
+   }
+   #buyPage button{
+    width: 340px;
+    height: 60px;
+    filter: drop-shadow(0px 10px 40px rgba(248, 161, 112, 0.2));
+    margin-top: 30px;
+    border-radius: 30px;
+   }

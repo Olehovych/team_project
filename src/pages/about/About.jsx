@@ -2,11 +2,19 @@ import React from "react";
 import styles from "./About.scss";
 // Img //
 import team from "./img/team.jpg";
+// Animation //
+import { motion } from "framer-motion";
+import { AnimText, AnimBtn } from "../home/Anim";
 export default function About() {
   return (
     <>
       <div className="about">
-        <div className="left__block">
+        <motion.div
+          variants={AnimText}
+          initial="hidden"
+          whileInView="visible"
+          className="left__block"
+        >
           <h2>Welcome to our watch store!</h2>
           <p>
             We are a team of professionals who have been working with watches
@@ -35,11 +43,16 @@ export default function About() {
             restoration, our watchmakers are ready to provide you with the best
             service.
           </p>
-        </div>
-        <div className="right__block">
+        </motion.div>
+        <motion.div
+          variants={AnimBtn}
+          initial="hidden"
+          whileInView="visible"
+          className="right__block"
+        >
           {" "}
           <img src={team} alt="team__photo" />
-        </div>
+        </motion.div>
       </div>
     </>
   );

@@ -1,0 +1,35 @@
+.mainGallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.galleryBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 388px;
+    margin: 20px;
+    color: white;
+}
+.galleryBlock img{
+    object-fit: contain;
+    width: 300px;
+    height: 272px;
+    background-color: white;
+}
+.priceLess{
+    display: flex;
+    flex-direction: row;
+}
+.priceLess strike{
+    margin-left: 10px;
+    color: rgb(153, 6, 6);
+}
+.priceLess img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: inherit;
+}

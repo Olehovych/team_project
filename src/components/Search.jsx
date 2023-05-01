@@ -25,18 +25,6 @@ const Search = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <ul
-          style={{
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          {filteredWatches.map((watch) => (
-            <Link to="/about" key={watch.id}>
-              {watch.name}
-            </Link>
-          ))}
-        </ul>
       </div>
     </>
   );

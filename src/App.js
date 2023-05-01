@@ -11,7 +11,7 @@ import Gallery from "./pages/gallery/Gallery";
 import Contact from "./pages/contact/Contact";
 import Bag from "./pages/bag/Bag";
 import Login from "./pages/login/Login";
-import Buying from "./pages/buying/Buying";
+
 function App() {
   return (
     <BrowserRouter>
@@ -23,7 +23,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/bag" element={<Bag />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/buying" element={<Buying />} />
       </Routes>
       <Footer />
     </BrowserRouter>

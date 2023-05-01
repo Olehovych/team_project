@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -7,9 +8,26 @@ const Footer = () => {
   const Facebook = "https://www.facebook.com/";
   const Youtube = "https://www.youtube.com/";
   const GitHub = "https://github.com/Olehovych/team_project";
+
+  const AnimImg = {
+    hidden: {
+      x: -100,
+      opacity: 0,
+      transition: {
+        duration: 1,
+      },
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
   return (
     <>
-      <footer>
+      <motion.footer variants={AnimImg} initial="hidden" whileInView="visible">
         <nav>
           <ul>
             <li>
@@ -29,7 +47,7 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-      </footer>
+      </motion.footer>
     </>
   );
 };

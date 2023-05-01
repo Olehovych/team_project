@@ -1,19 +1,25 @@
 import { useState } from "react";
-import styles from "./Home.scss";
-import { animated, useSpring } from "react-spring";
-////Img clock
+import { motion } from "framer-motion";
+
+// styles //
+import "./Home.scss";
+
+// Animation //
+import { AnimBtn, AnimImg } from "./Anim";
+
+// Img clock
 import home_clock_1 from "./img/Home_clock_1.png";
 import home_clock_2 from "./img/Home_clock_2.png";
 import home_clock_3 from "./img/Home_clock_3.png";
-// Img background //
 
+// Img background //
 import bg1 from "./img/bg_1.png";
 import bg2 from "./img/bg_2.png";
 import bg3 from "./img/bg_3.png";
 export default function Home() {
   //Img Clock
   let imgClock = [home_clock_1, home_clock_2, home_clock_3];
-  //
+
   // bg (background) //
   let ImgBg = [bg1, bg2, bg3];
   let clocks = [
@@ -49,24 +55,27 @@ export default function Home() {
       setCurrentBg(currentBg - 1);
     }
   };
+
   return (
     <main>
       <div className="main__block">
         <img className="background" src={ImgBg[currentBg]} alt="Bg" />
         <div className="left__block">
-          <img src={imgClock[currentImage]} alt="Clock" />
+          <motion.div variants={AnimImg} initial="hidden" whileInView="visible">
+            <img src={imgClock[currentImage]} alt="Clock" />
+          </motion.div>
         </div>
 
         <div className="right__block">
           <h3>{clocks[currentClock][0]}</h3>
           <h3>{clocks[currentClock][1]}</h3>
           <h3>{clocks[currentClock][2]}</h3>
-          <p>
+          <motion.p variants={AnimBtn} initial="hidden" whileInView="visible">
             MVMT watch for men, this watch is part of the Classic collection.
             The dial of this watch measures 45mm of diameter. The movement of
             this watch works with a quartz battery. This watch is water
             resistant up to 30 meters.
-          </p>
+          </motion.p>
           <div className="button__block">
             <button onClick={handlePrevClick}>PREV</button>
             <button onClick={handleNextClick}>NEXT</button>
