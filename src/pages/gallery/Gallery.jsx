@@ -27,14 +27,14 @@ export default function Gallery() {
   };
 
   return (
-    <div className="mainGallery">
+    <motion.div
+      className="mainGallery"
+      variants={AnimImg}
+      initial="hidden"
+      whileInView="visible"
+    >
       <div>
-        <motion.div
-          className="galleryBlock "
-          variants={AnimImg}
-          initial="hidden"
-          whileInView="visible"
-        >
+        <div className="galleryBlock ">
           <img src={home_clock_1} alt="" />
           <p>CLASSIC SERIES-45MM</p>
           <div className="priceLess">
@@ -46,13 +46,8 @@ export default function Gallery() {
               onClick={galleryBag}
             />
           </div>
-        </motion.div>
-        <motion.div
-          className="galleryBlock"
-          variants={AnimImg}
-          initial="hidden"
-          whileInView="visible"
-        >
+        </div>
+        <div className="galleryBlock">
           <img src={home_clock_9} alt="" />
           <p>CLASSIC SERIES-31MM</p>
           <div className="priceLess">
@@ -60,42 +55,27 @@ export default function Gallery() {
             <strike>$115.00</strike>
             <img src={bag2} className="galleryBag" onClick={galleryBag} />
           </div>
-        </motion.div>
-        <motion.div
-          className="galleryBlock"
-          variants={AnimImg}
-          initial="hidden"
-          whileInView="visible"
-        >
+        </div>
+        <div className="galleryBlock">
           <img src={home_clock_3} alt="" />
           <p>CLASSIC SERIES-55MM</p>
           <div className="priceLess">
             <p>$150.00 </p>
             <img src={bag2} className="galleryBag" onClick={galleryBag} />
           </div>
-        </motion.div>
+        </div>
         <br />
       </div>
       <div>
-        <motion.div
-          className="galleryBlock"
-          variants={AnimText}
-          initial="hidden"
-          whileInView="visible"
-        >
+        <div className="galleryBlock">
           <img src={home_clock_4} alt="" />
           <p>CLASSIC SERIES-998MM</p>
           <div className="priceLess">
             <p>$150.00 </p>
             <img src={bag2} className="galleryBag" onClick={galleryBag} />
           </div>
-        </motion.div>
-        <motion.div
-          className="galleryBlock"
-          variants={AnimText}
-          initial="hidden"
-          whileInView="visible"
-        >
+        </div>
+        <div className="galleryBlock">
           <img src={home_clock_5} alt="" />
           <p>CLASSIC SERIES-65MM</p>
           <div className="priceLess">
@@ -103,42 +83,27 @@ export default function Gallery() {
             <strike>$380.00</strike>
             <img src={bag2} className="galleryBag" onClick={galleryBag} />
           </div>
-        </motion.div>
-        <motion.div
-          className="galleryBlock"
-          variants={AnimText}
-          initial="hidden"
-          whileInView="visible"
-        >
+        </div>
+        <div className="galleryBlock">
           <img src={home_clock_6} alt="" />
           <p>CLASSIC SERIES-98MM</p>
           <div className="priceLess">
             <p>$1500.00 </p>
             <img src={bag2} className="galleryBag" onClick={galleryBag} />
           </div>
-        </motion.div>
+        </div>
         <br />
       </div>
       <div>
-        <motion.div
-          className="galleryBlock"
-          variants={AnimRight}
-          initial="hidden"
-          whileInView="visible"
-        >
+        <div className="galleryBlock">
           <img src={home_clock_7} alt="" />
           <p>CLASSIC SERIES-77MM</p>
           <div className="priceLess">
             <p>$430.00 </p>
             <img src={bag2} className="galleryBag" onClick={galleryBag} />
           </div>
-        </motion.div>
-        <motion.div
-          className="galleryBlock"
-          variants={AnimRight}
-          initial="hidden"
-          whileInView="visible"
-        >
+        </div>
+        <div className="galleryBlock">
           <img src={home_clock_8} alt="" />
           <p>CLASSIC SERIES-12MM</p>
           <div className="priceLess">
@@ -146,13 +111,8 @@ export default function Gallery() {
             <strike>$150.00</strike>
             <img src={bag2} className="galleryBag" onClick={galleryBag} />
           </div>
-        </motion.div>
-        <motion.div
-          className="galleryBlock"
-          variants={AnimRight}
-          initial="hidden"
-          whileInView="visible"
-        >
+        </div>
+        <div className="galleryBlock">
           <img src={home_clock_2} alt="" />
           <p>CLASSIC SERIES-35MM</p>
           <div className="priceLess">
@@ -160,9 +120,9 @@ export default function Gallery() {
             <strike>$200.00</strike>
             <img src={bag2} className="galleryBag" onClick={galleryBag} />
           </div>
-        </motion.div>
+        </div>
         <br />
       </div>
-    </div>
+    </motion.div>
   );
 }
